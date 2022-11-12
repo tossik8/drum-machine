@@ -1,0 +1,8 @@
+#display{
+    width: 10rem;
+    height: 4rem;
+    background-color: #4e4187;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

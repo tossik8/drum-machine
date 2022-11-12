@@ -1,0 +1,28 @@
+#drum-machine{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #3083DC;
+    padding: 1rem 0;
+}
+.right-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 800px) {
+    #drum-machine{
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+        padding: 1.5rem 2.5rem 2.5rem 0;
+        grid-template-rows: "a" "b";
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 460px){
+    #drum-machine{
+        padding-right: 0;
+        
+    }
+}

@@ -1,0 +1,108 @@
+.drum-pad{
+    width: 7rem;
+    height: 6rem;
+    background-color: #4e4187;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 5px black;
+}
+@keyframes colorSwitch {
+    0%,50%{
+        background-color: #7DDE92;
+        box-shadow: none;
+    }
+    100%{
+        background-color: #4e4187;
+    }
+}
+@-webkit-keyframes colorSwitch {
+    0%,50%{
+        background-color: #7DDE92;
+        box-shadow: none;
+    }
+    100%{
+        background-color: #4e4187;
+    }
+}
+@-moz-keyframes colorSwitch {
+    0%,50%{
+        background-color: #7DDE92;
+        box-shadow: none;
+    }
+    100%{
+        background-color: #4e4187;
+    }
+}
+@-o-keyframes colorSwitch {
+    0%,50%{
+        background-color: #7DDE92;
+        box-shadow: none;
+    }
+    100%{
+        background-color: #4e4187;
+    }
+}
+
+.clicked{
+    animation: colorSwitch 0.4s;
+    -moz-animation: colorSwitch 0.4s;
+    -o-animation: colorSwitch 0.4s;
+    -webkit-animation: colorSwitch 0.4s;
+}
+.drum-pad:hover{
+    cursor: pointer;
+}
+p{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+p.clicked{
+    animation: textJump 0.4s;
+    -moz-animation: textJump 0.4s;
+    -o-animation: textJump 0.4s;
+    -webkit-animation: textJump 0.4s;
+}
+
+@keyframes textJump {
+    50%{
+        margin-bottom: -10px;
+    }
+    100%{
+        margin: 0;
+    }
+}
+@-moz-keyframes textJump {
+    50%{
+        margin-bottom: -10px;
+    }
+    100%{
+        margin: 0;
+    }
+}
+@-webkit-keyframes textJump {
+    50%{
+        margin-bottom: -10px;
+    }
+    100%{
+        margin: 0;
+    }
+}
+@-o-keyframes textJump {
+    50%{
+        margin-bottom: -10px;
+    }
+    100%{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 460px) {
+    .drum-pad{
+        width: 4rem;
+        height: 4rem;
+    }
+}
