@@ -17,14 +17,11 @@ const DrumPad = (props) =>{
         const volume = store.getState().volumeReducer.volume/100;
         audio.volume = volume;
         audio.currentTime = 0;
-        document.getElementById(props.sound.id.toLowerCase()).onanimationstart = () => {
-            audio.play();
-            dispatch(displayActions.changeText(props.sound.name));
-        }
+        audio.play();
+        dispatch(displayActions.changeText(props.sound.name));
     }
 
     window.addEventListener("keydown", (event) => {
-
         if(event.key.toLowerCase() === props.sound.id.toLowerCase()){
             handleClick();
         }
